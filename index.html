@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My ebook</title>
+</head>
+<body>
+  <h1>Buy "My Book"</h1>
+  <p>It's all about me!</p>
+
+  <!-- this is copied from the Stripe checkout embed -->
+  <form action="/your-server-side-code" method="POST">
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_7UXeymk0Qn7M8TLaBj88z5Tt002PYbUiVp"
+      data-amount="999"
+      data-currency="EUR"
+      data-name="My Company"
+      data-description="My Book"
+      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+      data-locale="auto">
+    </script>
+  </form>
+  <!-- end of Stripe embed -->
+
+</body>
+</html>
